@@ -713,11 +713,9 @@
                 if (discard.test(word)) {
                     return;
                 }
-                console.log(word);
                 word = _normalize(word);
 
                 word = word.replace(_punctuation, "");
-                console.log(word);
 
                 if (_stopWords.test(word.toLowerCase())) {
                     return;
